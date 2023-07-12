@@ -57,7 +57,11 @@ li a.active, li a:hover{
     color: rgb(0, 0, 0);
     font-size: 40px;
     text-align: center;
+    font-family: "pangram";
     text-decoration-line: underline;
+    width: 100%;
+    font-size: 4vh;
+    margin: 40px 0px 40px;
 
     
 }
@@ -179,7 +183,7 @@ button{
 
 
 
-/*
+/* 
 .filtrosProductos{
 
     margin: 10px;
@@ -225,8 +229,9 @@ button{
 }
 .contact {
     text-align: center;
+    font-family:"pangram";
     font-size: 35px;
-    color: #b70e21;
+    color: #000000;
 }
 .contacto-wrapper{
     color: white;
@@ -308,16 +313,28 @@ button{
    
 }
 
-.infoSobreNosotros{
 
-    font-size: 40px;
-    margin: 8px;
-    width: 100%;
-    border:solid 2px; color: black;
-    border-radius: 15px;
+.caja > div{
+    margin: 10px;
     padding: 10px;
+    text-align: center;
     
+} 
+.caja p {
+    font-family: Didot;
+    font-size: 20px;
 }
+.mapa{
+    display: flex;
+   justify-content: center;
+   padding: 5px;
+   border: solid 8px black;
+   border-radius: 10px;
+   margin: 15px;
+   background-color: darkgray;
+   
+}
+
 
 
 
@@ -336,7 +353,7 @@ footer{
 
 .atencionCliente{
     color: white;
-    margin: 10px;
+    margin: 20px;
     max-width: 300px;
     border:solid 2px; color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -397,17 +414,24 @@ footer{
     }
 }
 @media (max-width: 858px){
+
+    header{
+        margin-bottom: 170px;
+    }
+    
     .logo{
         width: 20%;}
 
     .checkbtn{
         display: block;
+        line-height: 130px;
     }
     ul{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: gray;
+        background: #5D6D7E;
         top: auto;
         left: -100%;
         text-align: center;
@@ -415,6 +439,12 @@ footer{
         z-index: 2;
     }
 
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 3;
+       
+    }
    
     nav ul li{
         display: block;
@@ -435,6 +465,7 @@ footer{
     }
     footer {
         flex-direction: column;
+        align-items: center;
     }  
 
     .tarjeta {
@@ -457,19 +488,49 @@ footer{
         border-radius: 5px;
         padding: 10px;
         margin: 10px;
+            
+        }
+
         
         
     }
 
     @media (max-width: 640px){
-        
+
+        .checkbtn {
+            
+            line-height: 110px;
+
+            }
+            nav{
+                top: 0;
+            }
+
+            header{
+                margin-bottom: 170px;
+            }
     }
 
 
-       @media (max-width: 480px){
+       @media (min-width: 320px) and (max-width: 480px) {
     
         .logo{
             width: 30%;}
+
+        .carousel-inner {
+                width: 90%;
+                margin: 0 auto;
+                
+         }
+         button{
+            width: 100%;
+         }
+
+         .checkbtn {
+            
+            line-height: 110px;
+            margin-right: 20px;
+           
     }
     
     
