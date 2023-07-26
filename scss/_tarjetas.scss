@@ -1,0 +1,57 @@
+.tarjetas{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    border:solid 2px; color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    h3{
+        font-size: 25px;}
+    p{
+        font-size: 14px;}
+    img{
+        width: 80%;}
+
+    @media (max-width: 858px){
+        justify-content: space-between;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        border:solid 2px; color: black;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    } 
+}
+.tarjetas:hover{
+    box-shadow: 5px 5px 10px rgba(230, 7, 7, 0.418);
+    transform: translateY(-3%);
+
+}
+.tarjetas button{
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(230, 7, 7, 0.418);
+    font-family: Work Sans;
+    line-height: 28px;
+}
+
+button{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0)
+}
+
+
+
+
+
+

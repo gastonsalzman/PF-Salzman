@@ -1,0 +1,18 @@
+.tarjeta {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    @media (max-width: 858px){
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        text-align: center; 
+    }
+
+}

@@ -1,0 +1,102 @@
+nav{
+    background: $fondo-primario;
+    width: 100%;
+    @media (max-width: 858px){
+        position: fixed;
+        top: 0;
+        z-index: 3;
+    }
+    @media (max-width: 640px){
+        top: 0;
+    }
+
+    .logo{
+        width: 10%;
+            @media (max-width: 858px){
+            width: 22%;}
+            @media (min-width: 320px) and (max-width: 480px){
+                width: 30%;}
+    }
+    ul{
+        float: right;
+        margin-right: 20px;
+        @media (max-width: 858px){
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: gray;
+            background: #5D6D7E;
+            top: auto;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 2;
+        }
+        li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 5px;
+            @media (max-width: 858px){
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+        }
+        li a{
+            color: white;
+            font-size: 18px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            @media (max-width: 858px){
+                font-size: 20px;
+            }
+        }
+        li a.active, li a:hover{
+            background: gray;
+            transition: .5s;
+            @media (max-width: 858px){
+                background: none;
+                color: red;
+            }
+
+        }
+    }
+}    
+header{
+    @media (max-width: 858px){
+        margin-bottom: 170px;
+    }
+
+    @media (max-width: 640px){
+        margin-bottom: 170px;
+    }   
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    @media (max-width: 858px){
+        display: block;
+        line-height: 130px;
+    }
+    @media (max-width: 640px){
+        line-height: 110px;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        line-height: 110px;
+        margin-right: 20px;
+
+    }
+    
+}
+#check{
+    display: none;
+}
+
+

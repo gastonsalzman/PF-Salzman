@@ -1,0 +1,76 @@
+
+footer{
+    background-color:$fondo-primario;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 858px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cajafooter{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.atencionCliente{
+    color: white;
+    margin: 20px;
+    max-width: 300px;
+    border:solid 2px; color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px; 
+    
+
+}
+
+.mediosDePago{
+    color: white;
+    margin: 10px;
+    max-width: 300px;
+    border:solid 2px; color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px; 
+
+    i {
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    
+    }    
+}
+
+    
+    
+.redes{   
+    color: white;  
+    margin: 10px;
+    max-width: 300px;
+    border:solid 2px; color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+
+    i {
+        font-size: 30px;
+        margin: 10px;
+    
+    }
+}
+
+
+
+.newsletter{
+    margin: 10px;
+    max-width: 300px;
+    border:solid 2px; color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;}
+
+.contenido{
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px; color: rgb(255, 255, 255);
+
+}

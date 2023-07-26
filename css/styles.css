@@ -5,31 +5,93 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.ofertas {
+  display: block;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  background-color: #212121;
+  border-style: double;
+  border-width: 6px 6px 6px 6px;
+  border-color: #212121;
+  border-radius: 6px 6px 6px 6px;
+  margin: 20px;
+}
+
+.subtitulo {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  font-family: "pangram";
+}
+
+.botonver {
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
 nav {
   background: black;
   width: 100%;
 }
-
-.enlace {
-  position: absolute;
-  padding: 20px 50px;
+@media (max-width: 858px) {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
 }
-
-.logo {
+@media (max-width: 640px) {
+  nav {
+    top: 0;
+  }
+}
+nav .logo {
   width: 10%;
 }
-
+@media (max-width: 858px) {
+  nav .logo {
+    width: 22%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav .logo {
+    width: 30%;
+  }
+}
 nav ul {
   float: right;
   margin-right: 20px;
 }
-
+@media (max-width: 858px) {
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    background: #5D6D7E;
+    top: auto;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+}
 nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0px 5px;
 }
-
+@media (max-width: 858px) {
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+}
 nav ul li a {
   color: white;
   font-size: 18px;
@@ -37,10 +99,31 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-
-li a.active, li a:hover {
+@media (max-width: 858px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+nav ul li a.active, nav ul li a:hover {
   background: gray;
   transition: 0.5s;
+}
+@media (max-width: 858px) {
+  nav ul li a.active, nav ul li a:hover {
+    background: none;
+    color: red;
+  }
+}
+
+@media (max-width: 858px) {
+  header {
+    margin-bottom: 170px;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    margin-bottom: 170px;
+  }
 }
 
 .checkbtn {
@@ -51,6 +134,23 @@ li a.active, li a:hover {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    line-height: 130px;
+  }
+}
+@media (max-width: 640px) {
+  .checkbtn {
+    line-height: 110px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .checkbtn {
+    line-height: 110px;
+    margin-right: 20px;
+  }
 }
 
 #check {
@@ -76,13 +176,6 @@ li a.active, li a:hover {
   margin: 40px 0px 40px;
 }
 
-.subtitulo {
-  color: black;
-  font-size: 30px;
-  text-align: center;
-  font-family: "pangram";
-}
-
 .slide {
   margin-top: 10px;
 }
@@ -91,6 +184,12 @@ li a.active, li a:hover {
   width: 70%;
   margin: 0 auto;
   z-index: 1;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -115,6 +214,15 @@ li a.active, li a:hover {
   text-align: center;
   flex-wrap: wrap;
 }
+@media (max-width: 858px) {
+  .tarjeta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}
 
 .tarjetas {
   display: flex;
@@ -129,79 +237,49 @@ li a.active, li a:hover {
   padding: 10px;
   margin: 10px;
 }
+.tarjetas h3 {
+  font-size: 25px;
+}
+.tarjetas p {
+  font-size: 14px;
+}
+.tarjetas img {
+  width: 80%;
+}
+@media (max-width: 858px) {
+  .tarjetas {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    border: solid 2px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.tarjetas:hover {
+  box-shadow: 5px 5px 10px rgba(230, 7, 7, 0.418);
+  transform: translateY(-3%);
+}
 
 .tarjetas button {
   width: 100px;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(0, 154, 214);
+  background-color: rgba(230, 7, 7, 0.418);
   font-family: Work Sans;
   line-height: 28px;
 }
 
 button {
-  width: 400px;
+  width: 300px;
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
   border: 1px solid rgb(0, 0, 0);
-}
-
-.botonver {
-  display: block;
-  text-align: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.tarjetas h3 {
-  font-size: 25px;
-}
-
-.tarjetas p {
-  font-size: 14px;
-}
-
-.tarjetas img {
-  width: 80%;
-}
-
-/* borrador filtro
-.filtrosProductos{
-
-    margin: 10px;
-    width: 300px;
-    border:solid 2px; color: black;
-    border-radius: 5px;
-    padding: 10px;
-
-}
-
-.filtrosProductos h1 {
-    font-size: 15px;
-}
-
-.filtrosProductos h2{
-    font-size: 15px;
-}
-.filtrosProductos input {
-    padding: 4px;
-
-
-}
-*/
-.ofertas {
-  display: block;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  text-align: center;
-  background-color: #212121;
-  border-style: double;
-  border-width: 6px 6px 6px 6px;
-  border-color: #212121;
-  border-radius: 6px 6px 6px 6px;
-  margin: 20px;
 }
 
 .content {
@@ -216,6 +294,7 @@ button {
   font-family: "pangram";
   font-size: 35px;
   color: black;
+  margin: 10px;
 }
 
 .contacto-wrapper {
@@ -294,22 +373,12 @@ button {
   padding: 4px;
 }
 
-.infocontacto {
-  display: flex;
-  width: 350px;
-  font-size: 30px;
-  text-align: center;
-  border: solid 2px;
-  color: black;
-}
-
 .caja > div {
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
-
-.caja p {
+.caja > div p {
   font-family: Didot;
   font-size: 20px;
 }
@@ -328,6 +397,12 @@ footer {
   background-color: black;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 858px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cajafooter {
@@ -354,7 +429,6 @@ footer {
   border-radius: 10px;
   padding: 10px;
 }
-
 .mediosDePago i {
   color: white;
   font-size: 20px;
@@ -370,7 +444,6 @@ footer {
   border-radius: 10px;
   padding: 10px;
 }
-
 .redes i {
   font-size: 30px;
   margin: 10px;
@@ -392,105 +465,9 @@ footer {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 952px) {
-  .enlace {
-    padding-left: 20px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
 @media (max-width: 858px) {
-  header {
-    margin-bottom: 170px;
-  }
-  .logo {
-    width: 22%;
-  }
-  .checkbtn {
-    display: block;
-    line-height: 130px;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: gray;
-    background: #5D6D7E;
-    top: auto;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 2;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-    z-index: 3;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  li a:hover, li a.active {
-    background: none;
-    color: red;
-  }
   #check:checked ~ ul {
     left: 0;
-  }
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .tarjeta {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-  }
-  .tarjetas {
-    justify-content: space-between;
-    flex-direction: column;
-    width: 70%;
-    height: auto;
-    border: solid 2px;
-    color: black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-  }
-}
-@media (max-width: 640px) {
-  .checkbtn {
-    line-height: 110px;
-  }
-  nav {
-    top: 0;
-  }
-  header {
-    margin-bottom: 170px;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .logo {
-    width: 30%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: 0 auto;
-  }
-  button {
-    width: 100%;
-  }
-  .checkbtn {
-    line-height: 110px;
-    margin-right: 20px;
   }
 }
 

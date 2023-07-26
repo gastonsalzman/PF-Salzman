@@ -1,0 +1,19 @@
+.caja > div{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    p{
+        font-family: Didot;
+        font-size: 20px;
+    }
+} 
+
+.mapa{
+    display: flex;
+   justify-content: center;
+   padding: 5px;
+   border: solid 8px black;
+   border-radius: 10px;
+   margin: 15px;
+   background-color: darkgray;
+}
