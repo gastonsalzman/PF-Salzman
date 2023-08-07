@@ -446,6 +446,15 @@ footer {
   font-size: 30px;
   margin: 10px;
 }
+.redes .facebook {
+  color: rgba(9, 95, 255, 0.911);
+}
+.redes .instagram {
+  color: #b43ed1;
+}
+.redes .whatsapp {
+  color: #25d366;
+}
 
 .newsletter {
   margin: 10px;
