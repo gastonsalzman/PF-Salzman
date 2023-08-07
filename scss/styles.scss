@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "extends";
+@import "mixins";
 @import "nav";
 @import "inicio";
 @import "carousel";
@@ -10,18 +11,6 @@
 @import "sobreNosotros";
 @import "footer";
 
-
-.subtitulo{
-    @extend %subtitulo
-}
-
-.botonver{
-   @extend %botonproductos
-}
-    
-.ofertas{
-    @extend %block-ofertas  
-}
 
 @media (max-width: 858px){
     #check:checked ~ ul {

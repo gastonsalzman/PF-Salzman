@@ -17,3 +17,15 @@
     font-size: 4vh;
     margin: 40px 0px 40px    
 }
+
+.subtitulo{
+    @extend %subtitulo
+}
+
+.botonver{
+   @extend %botonproductos
+}
+    
+.ofertas{
+    @extend %block-ofertas  
+}

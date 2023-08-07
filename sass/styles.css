@@ -30,6 +30,7 @@
   display: block;
   text-align: center;
   justify-content: space-around;
+  width: 100%;
 }
 
 nav {
@@ -265,7 +266,7 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .tarjetas button {
-  width: 100px;
+  width: 500px;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -275,6 +276,7 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 button {
+  width: 300px;
   background-color: white;
   border-radius: 3px;
   border: 1px solid rgb(0, 0, 0);

@@ -1,0 +1,9 @@
+@mixin boton-estilo($width){
+    width: $width;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(230, 7, 7, 0.418);
+    font-family: Work Sans;
+    line-height: 28px;
+}
